@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:meditation_app/widgets/category.dart';
 import 'package:meditation_app/widgets/navbar.dart';
+import 'package:meditation_app/widgets/searchbar.dart';
 import 'constants/consts.dart';
 
 void main() {
@@ -107,28 +108,7 @@ class HomePage extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Container(
-                    margin: const EdgeInsets.symmetric(vertical: 30),
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 30,
-                      vertical: 5,
-                    ),
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(30),
-                    ),
-                    child: TextField(
-                      textAlign: TextAlign.right,
-                      textDirection: TextDirection.rtl,
-                      decoration: InputDecoration(
-                          hintText: '. . .جستجو کنید',
-                          hintStyle: const TextStyle(
-                            fontFamily: 'iranSans',
-                          ),
-                          border: InputBorder.none,
-                          icon: SvgPicture.asset('assets/icons/search.svg')),
-                    ),
-                  ),
+                  const BuildSearch(),
                   Expanded(
                     child: GridView.count(
                         childAspectRatio: 0.85,
