@@ -97,6 +97,9 @@ flutter:
     - family: yagut
       fonts:
         - asset: assets/fonts/B Yagut_0.ttf
+    - family: rozname
+      fonts:
+        - asset: assets/fonts/Far_Rooznameh.ttf
   #   - family: Trajan Pro
   #     fonts:
   #       - asset: fonts/TrajanPro.ttf
