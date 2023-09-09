@@ -33,3 +33,39 @@ class BuildNav extends StatelessWidget {
     );
   }
 }
+
+
+class BuildNavBar extends StatelessWidget {
+  const BuildNavBar({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+      height: 70,
+      color: Colors.white,
+      child: const Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          BuildNav(
+            svgUrl: 'assets/icons/calendar.svg',
+            navBarTitle: 'امروز',
+            isActive: false,
+          ),
+          BuildNav(
+            svgUrl: 'assets/icons/gym.svg',
+            navBarTitle: 'تمرینات',
+            isActive: true,
+          ),
+          BuildNav(
+            svgUrl: 'assets/icons/Settings.svg',
+            navBarTitle: 'تنظیمات',
+            isActive: false,
+          ),
+        ],
+      ),
+    );
+  }
+}

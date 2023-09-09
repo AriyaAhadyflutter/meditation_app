@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:meditation_app/constants/consts.dart';
-import 'package:meditation_app/meditation_page.dart';
+import 'package:meditation_app/screens/meditation_page.dart';
 
 class CategoryCard extends StatelessWidget {
   final VoidCallback? press;
